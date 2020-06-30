@@ -1,0 +1,32 @@
+.logo {
+  height: 2em;
+  padding-right: 1em;
+}
+#logo-text {
+  font-size: 1.2em;
+}
+.burger {
+  border: none;
+  background: none;
+}
+.fa-bars {
+  color: white;
+  font-size: 2em;
+}
+/*****/
+.container {
+  width: 1024px;
+  padding: 2em;
+}
+
+.bold-blue {
+  font-weight: bold;
+  color: #0277bd;
+}
+
+#app-nav {
+  border-radius: 0%;
+}
+#bootstrap-override .container {
+  width: 80%;
+}

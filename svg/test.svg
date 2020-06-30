@@ -1,0 +1,27 @@
+<svg id="test" class="links__icon" viewBox="0 0 64 64" 
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="Filled_outline" data-name="Filled outline">
+        <path d="m3 55h58v4h-58z" fill="#ad6327" />
+        <path d="m61 27h-58v4h3v24h4v-24h44v24h4v-24h3z" fill="#f9bb4b" />
+        <path d="m14 7v20h8v-20a2 2 0 0 0 0-4h-8a2 2 0 0 0 0 4z" fill="#50b4f8" />
+        <path d="m14 31h8a0 0 0 0 1 0 0v16a4 4 0 0 1 -4 4 4 4 0 0 1 -4-4v-16a0 0 0 0 1 0 0z" fill="#9746f4" />
+        <path d="m14 12h8v15h-8z" fill="#9746f4" />
+        <path d="m28 7v20h8v-20a2 2 0 0 0 0-4h-8a2 2 0 0 0 0 4z" fill="#50b4f8" />
+        <path d="m28 31h8a0 0 0 0 1 0 0v16a4 4 0 0 1 -4 4 4 4 0 0 1 -4-4v-16a0 0 0 0 1 0 0z" fill="#dd3e46" />
+        <path d="m28 21h8v6h-8z" fill="#dd3e46" />
+        <path d="m42 7v20h8v-20a2 2 0 0 0 0-4h-8a2 2 0 0 0 0 4z" fill="#50b4f8" />
+        <path d="m42 31h8a0 0 0 0 1 0 0v16a4 4 0 0 1 -4 4 4 4 0 0 1 -4-4v-16a0 0 0 0 1 0 0z" fill="#c8d952" />
+        <path d="m42 17h8v10h-8z" fill="#c8d952" />
+        <g fill="#f4f4e6">
+            <path d="m17 35h2v2h-2z" />
+            <path d="m45 21h2v2h-2z" />
+            <path d="m45 45h2v2h-2z" />
+            <path d="m45 41h2v2h-2z" />
+        </g>
+        <path d="m61 26h-10v-18.171a3 3 0 0 0 -1-5.829h-8a3 3 0 0 0 -1 5.829v18.171h-4v-18.171a3 3 0 0 0 -1-5.829h-8a3 3 0 0 0 -1 5.829v18.171h-4v-18.171a3 3 0 0 0 -1-5.829h-8a3 3 0 0 0 -1 5.829v18.171h-10a1 1 0 0 0 -1 1v4a1 1 0 0 0 1 1h2v22h-2a1 1 0 0 0 -1 1v4a1 1 0 0 0 1 1h58a1 1 0 0 0 1-1v-4a1 1 0 0 0 -1-1h-2v-22h2a1 1 0 0 0 1-1v-4a1 1 0 0 0 -1-1zm-19-22h8a1 1 0 0 1 0 2h-3v2h2v8h-6v-8h2v-2h-3a1 1 0 0 1 0-2zm7 14v8h-6v-8zm-21-14h8a1 1 0 0 1 0 2h-5v2h4v12h-6v-13a1 1 0 0 0 -1-1 1 1 0 0 1 0-2zm7 18v4h-6v-4zm-21-18h8a1 1 0 0 1 0 2 1 1 0 0 0 -1 1v4h-6v-3h3v-2h-4a1 1 0 0 1 0-2zm7 9v13h-6v-13zm39 43v2h-56v-2zm-42-4a5.006 5.006 0 0 0 5-5v-15h4v15a5 5 0 0 0 10 0v-15h4v15a5 5 0 0 0 10 0v-15h2v22h-42v-22h2v15a5.006 5.006 0 0 0 5 5zm-3-5v-15h6v15a3 3 0 0 1 -6 0zm14 0v-15h6v15a3 3 0 0 1 -6 0zm14 0v-15h6v15a3 3 0 0 1 -6 0zm17-17h-2a1 1 0 0 0 -1 1v23h-2v-23a1 1 0 0 0 -1-1h-44a1 1 0 0 0 -1 1v23h-2v-23a1 1 0 0 0 -1-1h-2v-2h56z" />
+        <path d="m17 35h2v2h-2z" />
+        <path d="m45 21h2v2h-2z" />
+        <path d="m45 45h2v2h-2z" />
+        <path d="m45 41h2v2h-2z" />
+    </g>
+</svg>
