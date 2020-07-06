@@ -1,28 +1,20 @@
 $(document).ready(function () {
-  $("#patienttable").DataTable({
-    data: patientDemo,
+  $("#clienttable").DataTable({
+    order: [[0, "desc"]],
+    data: clientDemo,
+
     columns: [
       { data: "id" },
       { data: "name" },
-      { data: "nrc" },
-      { data: "dob" },
-      { data: "age" },
-      { data: "blood_type" },
-      { data: "gender" },
-      { data: "height" },
-      { data: "weight" },
-      { data: "marital_status" },
-      { data: "referral" },
+      { data: "email" },
+      { data: "type" },
       { data: "phone" },
       { data: "address" },
-      { data: "reg_date" },
-      { data: "reg_time" },
+
       {
         data: null,
         render: function (data, type, row) {
           return `
-            <button type="button" class="btn btn-success btn-sm"> Orders</button>
-            <button type="button" class="btn btn-info btn-sm"> Records</button>
             <button type="button" class="btn btn-warning btn-sm"> Edit</button>
             <button type="button" class="btn btn-danger btn-sm"> Delete</button>
             `;

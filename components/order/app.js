@@ -1,28 +1,65 @@
+function selectPatient(id, name) {
+  $("#patient_id").val(id);
+  $("#patient_name").val(name);
+}
+var tests = [];
+var totalTests = 0;
+var totalPrice = 0;
+var totalAmount = 0;
+function handleCheckbox(checkbox, name, price) {
+  if (checkbox.checked == true) {
+    tests.push(name);
+    totalTests++;
+    totalPrice += price;
+  } else {
+    totalTests--;
+    totalPrice -= price;
+  }
+  $("#totalTests").val(totalTests);
+  $("#price").val(totalPrice);
+  if (totalPrice > 0) {
+    $("#commission").removeAttr("disabled");
+  } else {
+    $("#commission").prop("disabled", true);
+  }
+}
+function calculateTotalAmount() {
+  totalAmount = parseFloat($("#commission").val()) + totalPrice;
+  $("#totalAmount").val(totalAmount);
+}
+
+var newID = orderDemo[orderDemo.length - 1].order_id + 1;
 $(document).ready(function () {
-  $("#mydatatable").DataTable({
-    data: dataDemo,
+  var ot = $("#ordertable").DataTable({
+    order: [[0, "desc"]],
+    data: orderDemo,
     columns: [
       { data: "order_id" },
       { data: "patient_name" },
       { data: "balance" },
-      { data: "lab" },
       { data: "level" },
-      { data: "status" },
       { data: "tat" },
       { data: "tests" },
       { data: "dateTime" },
       {
+        data: "status",
+        render: function (data, type, row) {
+          return `<span id="${row.order_id}">${data}</span>`;
+        },
+      },
+      {
         data: null,
         render: function (data, type, row) {
           return `
-            <button type="button" class="btn btn-success btn-sm"> Invoice</button>
-            <button type="button" class="btn btn-info btn-sm"> Pay</button>
-            <button type="button" class="btn btn-warning btn-sm"> Edit</button>
-            <button type="button" class="btn btn-danger btn-sm"> Cancel</button>
+            <a target="_blank" href="https://invoicetemplates.com/wp-content/uploads/medical-bill-invoice-template.pdf" type="button" class="btn btn-success btn-sm"> Invoice</a>
+            <button type="button" class="btn btn-warning btn-sm" onclick="$(this).html('Paid').removeClass('btn-warning').addClass('btn-info');"> Pay Now</button>
+        
+            <button type="button" class="btn btn-danger btn-sm" onclick="$('#${row.order_id}').html('Cancelled')" > Cancel</button>
             `;
         },
       },
     ],
+
     responsive: {
       breakpoints: [
         { name: "bigdesktop", width: Infinity },
@@ -37,8 +74,7 @@ $(document).ready(function () {
       ],
       details: {
         display: $.fn.dataTable.Responsive.display.modal({
-          header: function (row) {
-            var data = row.data();
+          header: function () {
             return "Patient Detail";
           },
         }),
@@ -54,28 +90,58 @@ $(document).ready(function () {
       { responsivePriority: 4, targets: -6 },
     ],
   });
+  $("#submitOrder").on("click", function () {
+    var newRow = {
+      order_id: newID,
+      patient_name: $("#patient_name").val(),
+      balance: $("#totalAmount").val(),
 
-  $("#patientdatatable").DataTable();
+      level: $("#urgency").val(),
+      status: "Unfufilled",
+      tat: "00:60",
+      tests: tests.join(", "),
+      dateTime: "2018-10-23 21:49:21",
+    };
+    var rowNode = ot.row.add(newRow).draw().node();
+    $(rowNode).css("color", "red");
+    newID++;
+  });
+
+  $("#patientdatatable").DataTable({
+    bInfo: false,
+    pageLength: 1,
+    lengthMenu: [1, 5, 10],
+    order: [[0, "desc"]],
+    data: patientDemo,
+    columns: [
+      { data: "id" },
+      { data: "name" },
+      { data: "nrc" },
+      { data: "dob" },
+      {
+        data: null,
+        render: function (data, type, row) {
+          let a = row.id;
+          let b = row.name;
+          return `<button type="button" class="btn btn-sm btn-success" onclick="selectPatient(${a},'${b}')">Select Patient</button>`;
+        },
+      },
+    ],
+  });
+
+  $("#testdatatable").DataTable({
+    data: testDemo,
+    columns: [
+      { data: "id" },
+      { data: "name" },
+      { data: "type" },
+      { data: "price" },
+      {
+        data: "name",
+        render: function (data, type, row) {
+          return `<input style="transform: scale(1.5);" type="checkbox" name="" value="${data}" onchange="handleCheckbox(this,'${data}',${row.price})">`;
+        },
+      },
+    ],
+  });
 });
-var dataDemo = [
-  {
-    order_id: 1,
-    patient_name: "Chelsie",
-    balance: "4977737725",
-    lab: "12/6/2019",
-    level: 43,
-    status: "UZ",
-    tat: "F",
-    tests: 4,
-    dateTime: 155,
-  },
-];
-/* Order ID:	1
-Patient Name:	Chelsie
-Balance:	4977737725
-Lab:	12/6/2019
-Level:	43
-TAT:	UZ
-Tests:	F
-Date Time:	4
-Status:*/
