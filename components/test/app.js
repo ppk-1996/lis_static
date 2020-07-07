@@ -32,7 +32,16 @@ $(document).ready(function () {
       { data: "sample_ids" },
       { data: "user_name" },
       { data: "date_time" },
-      { data: "status" },
+      {
+        data: "status",
+        render: function (data, type, row) {
+          return `${
+            data == "Pending"
+              ? "<strong style='color:red'>" + data + "</strong>"
+              : data
+          }`;
+        },
+      },
       { data: "result" },
 
       {

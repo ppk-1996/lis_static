@@ -24,7 +24,7 @@ $(document).ready(function () {
           return `
             <a href="../order/index.html" class="btn btn-success btn-sm" >Orders</a>
             <button type="button" class="btn btn-warning btn-sm"> Edit</button>
-            <button type="button" class="btn btn-danger btn-sm"> Delete</button>
+            <button type="button" class="btn btn-danger btn-sm" onclick="$(this).parent().parent().hide()"> Delete</button>
             `;
         },
       },

@@ -40,7 +40,12 @@ $(document).ready(function () {
       { data: "tat" },
       { data: "tests" },
       { data: "dateTime" },
-      { data: "status" },
+      {
+        data: "status",
+        render: function (data, type, row) {
+          return `<span id="${row.order_id}">${data}</span>`;
+        },
+      },
       {
         data: "status",
         render: function (data, type, row) {
@@ -50,9 +55,7 @@ $(document).ready(function () {
           
             <a target="_blank" href="https://www.reportss.org/wp-content/uploads/2012/10/Test-Report-Template.docx" type="button" class="btn btn-info btn-sm"> Test Results</a>
             
-            <button type="button" class="btn btn-warning btn-sm" onclick="$(this).html('Paid').removeClass('btn-warning').addClass('btn-secondary');"> Pay Now</button>
-          
-            <button type="button" class="btn btn-danger btn-sm" onclick="$('#${row.order_id}').html('Cancelled')" > Cancel</button>
+            <button type="button" class="btn btn-warning btn-sm" onclick="$(this).html('Paid').removeClass('btn-warning').addClass('btn-secondary');"> Pay Now</button>          
             `;
           } else {
             return `
@@ -60,7 +63,7 @@ $(document).ready(function () {
                      
             <button type="button" class="btn btn-warning btn-sm" onclick="$(this).html('Paid').removeClass('btn-warning').addClass('btn-secondary');"> Pay Now</button>
           
-            <button type="button" class="btn btn-danger btn-sm" onclick="$('#${row.order_id}').html('Cancelled')" > Cancel</button>
+            <button type="button" class="btn btn-danger btn-sm" onclick="$('#${row.order_id}').html('Cancelled'); $(this).hide();" > Cancel</button>
             `;
           }
         },
