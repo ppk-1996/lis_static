@@ -1,6 +1,8 @@
-function runTest(id, name, test_name, type) {
+let currentID = 0;
+function runTest(id, order_id, name, test_name, type) {
+  currentID = id;
   $("#runTestModelLabel").html("Run Test");
-  $("#orderID").val(id);
+  $("#orderID").val(order_id);
   $("#patientName").val(name);
   $("#runTestName").val(test_name);
   $("#runTestType").val(type);
@@ -37,7 +39,11 @@ $(document).ready(function () {
         render: function (data, type, row) {
           return `${
             data == "Pending"
-              ? "<strong style='color:red'>" + data + "</strong>"
+              ? "<strong id=status" +
+                row.id +
+                " style='color:red'>" +
+                data +
+                "</strong>"
               : data
           }`;
         },
@@ -54,8 +60,8 @@ $(document).ready(function () {
             `;
           }
           return `
-            <button type="button" class="btn btn-success btn-sm"   data-toggle="modal"
-            data-target="#runTestModal" onclick="runTest(${row.order_id},'${row.patient_name}','${row.test_name}','${row.test_type}')"> Run Test</button>
+            <button id="btn${row.id}" type="button" class="btn btn-success btn-sm"   data-toggle="modal"
+            data-target="#runTestModal" onclick="runTest(${row.id},${row.order_id},'${row.patient_name}','${row.test_name}','${row.test_type}')"> Run Test</button>
             `;
         },
       },
@@ -121,9 +127,12 @@ $(document).ready(function () {
   });
 
   $("#uploadResult").on("click", function () {
-    $("#success").prop("hidden", false);
-    setTimeout(function () {
-      $("#success").prop("hidden", true);
-    }, 2000);
+    $("#status" + currentID)
+      .html("Completed")
+      .css("color", "black");
+    $("#btn" + currentID)
+      .html("Rerun Test")
+      .removeClass("btn-success")
+      .addClass("btn-info");
   });
 });
