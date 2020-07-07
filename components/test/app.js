@@ -111,5 +111,10 @@ $(document).ready(function () {
     $("#testPrice").val("");
   });
 
-  $("#uploadResult").on("click", function () {});
+  $("#uploadResult").on("click", function () {
+    $("#success").prop("hidden", false);
+    setTimeout(function () {
+      $("#success").prop("hidden", true);
+    }, 2000);
+  });
 });
