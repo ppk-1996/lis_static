@@ -4926,7 +4926,7 @@ var testRecordDemo = [
 var userDemo = [
   {
     id: 1,
-    first_name: "Ariel",
+    name: "Ariel",
     email: "ashaves0@livejournal.com",
     password: "khROrZSo",
     role: "NASDAQ",
@@ -4934,7 +4934,7 @@ var userDemo = [
   },
   {
     id: 2,
-    first_name: "Mikkel",
+    name: "Mikkel",
     email: "mpolson1@mapy.cz",
     password: "k1zhAe",
     role: "NYSE",
@@ -4942,7 +4942,7 @@ var userDemo = [
   },
   {
     id: 3,
-    first_name: "Yolane",
+    name: "Yolane",
     email: "ynesbeth2@sciencedirect.com",
     password: "e8joM3Qcar",
     role: "NASDAQ",
@@ -4950,7 +4950,7 @@ var userDemo = [
   },
   {
     id: 4,
-    first_name: "Danna",
+    name: "Danna",
     email: "dtumelty3@usatoday.com",
     password: "wfETtBv",
     role: "NYSE",
@@ -4958,7 +4958,7 @@ var userDemo = [
   },
   {
     id: 5,
-    first_name: "Moina",
+    name: "Moina",
     email: "mlorey4@cdc.gov",
     password: "bHg7KctT",
     role: "NASDAQ",
@@ -4966,7 +4966,7 @@ var userDemo = [
   },
   {
     id: 6,
-    first_name: "Ursula",
+    name: "Ursula",
     email: "ufeltoe5@cdbaby.com",
     password: "2wO3mayJu",
     role: "NYSE",
@@ -4974,7 +4974,7 @@ var userDemo = [
   },
   {
     id: 7,
-    first_name: "Frederica",
+    name: "Frederica",
     email: "fwarbey6@ow.ly",
     password: "7OHRX6aPo",
     role: "NASDAQ",
@@ -4982,7 +4982,7 @@ var userDemo = [
   },
   {
     id: 8,
-    first_name: "Fletcher",
+    name: "Fletcher",
     email: "fspirit7@macromedia.com",
     password: "6WFTVQB0T3c",
     role: "NYSE",
@@ -4990,7 +4990,7 @@ var userDemo = [
   },
   {
     id: 9,
-    first_name: "Freddie",
+    name: "Freddie",
     email: "fmacelroy8@ask.com",
     password: "h5paNOjA4",
     role: "NASDAQ",
@@ -4998,7 +4998,7 @@ var userDemo = [
   },
   {
     id: 10,
-    first_name: "Karola",
+    name: "Karola",
     email: "kkynder9@github.io",
     password: "h9XadvCQGg1",
     role: "NYSE",
@@ -5006,7 +5006,7 @@ var userDemo = [
   },
   {
     id: 11,
-    first_name: "Si",
+    name: "Si",
     email: "sdallicoata@bizjournals.com",
     password: "PSf7Wc",
     role: "NASDAQ",
@@ -5014,7 +5014,7 @@ var userDemo = [
   },
   {
     id: 12,
-    first_name: "Vivien",
+    name: "Vivien",
     email: "vfrodsamb@dailymotion.com",
     password: "L2ahM99Jcu1v",
     role: "NASDAQ",
@@ -5022,7 +5022,7 @@ var userDemo = [
   },
   {
     id: 13,
-    first_name: "Barrett",
+    name: "Barrett",
     email: "blapadulac@github.io",
     password: "s2eQrERIAX7",
     role: "NASDAQ",
@@ -5030,7 +5030,7 @@ var userDemo = [
   },
   {
     id: 14,
-    first_name: "Kenon",
+    name: "Kenon",
     email: "kaltend@wisc.edu",
     password: "nQvP4Q8g",
     role: "NYSE",
@@ -5038,7 +5038,7 @@ var userDemo = [
   },
   {
     id: 15,
-    first_name: "Lia",
+    name: "Lia",
     email: "lenrice@gravatar.com",
     password: "2JhsGIsFm8OO",
     role: "NYSE",
@@ -5046,7 +5046,7 @@ var userDemo = [
   },
   {
     id: 16,
-    first_name: "Jenni",
+    name: "Jenni",
     email: "jyakunchikovf@indiegogo.com",
     password: "1uJpV649Bow",
     role: "NYSE",
@@ -5054,7 +5054,7 @@ var userDemo = [
   },
   {
     id: 17,
-    first_name: "Addison",
+    name: "Addison",
     email: "amcaloreng@abc.net.au",
     password: "XgHBWj",
     role: "NYSE",
@@ -5062,7 +5062,7 @@ var userDemo = [
   },
   {
     id: 18,
-    first_name: "Gav",
+    name: "Gav",
     email: "gpicardoh@clickbank.net",
     password: "pIenO9k",
     role: "NASDAQ",
@@ -5070,7 +5070,7 @@ var userDemo = [
   },
   {
     id: 19,
-    first_name: "Oliy",
+    name: "Oliy",
     email: "oedinburoughi@sourceforge.net",
     password: "zJ5BA7",
     role: "NYSE",
@@ -5078,7 +5078,7 @@ var userDemo = [
   },
   {
     id: 20,
-    first_name: "Patric",
+    name: "Patric",
     email: "psollarsj@posterous.com",
     password: "ZTHJAiBu7",
     role: "NASDAQ",
@@ -5086,7 +5086,7 @@ var userDemo = [
   },
   {
     id: 21,
-    first_name: "Vick",
+    name: "Vick",
     email: "vshurmorek@smh.com.au",
     password: "dtyjXp",
     role: "NASDAQ",
@@ -5094,7 +5094,7 @@ var userDemo = [
   },
   {
     id: 22,
-    first_name: "Alexander",
+    name: "Alexander",
     email: "aeyeingtonl@mayoclinic.com",
     password: "ATRLmdC1X",
     role: "NYSE",
@@ -5102,7 +5102,7 @@ var userDemo = [
   },
   {
     id: 23,
-    first_name: "Jamey",
+    name: "Jamey",
     email: "jcolganm@g.co",
     password: "05HuAo",
     role: "NASDAQ",
@@ -5110,7 +5110,7 @@ var userDemo = [
   },
   {
     id: 24,
-    first_name: "Idalina",
+    name: "Idalina",
     email: "idruittn@angelfire.com",
     password: "I0oV0f",
     role: "NASDAQ",
@@ -5118,7 +5118,7 @@ var userDemo = [
   },
   {
     id: 25,
-    first_name: "Violette",
+    name: "Violette",
     email: "vpeero@amazon.de",
     password: "BmBEFQ",
     role: "NYSE",
@@ -5126,7 +5126,7 @@ var userDemo = [
   },
   {
     id: 26,
-    first_name: "Nico",
+    name: "Nico",
     email: "nbuchamp@salon.com",
     password: "9zypoZ",
     role: "NASDAQ",
@@ -5134,7 +5134,7 @@ var userDemo = [
   },
   {
     id: 27,
-    first_name: "Aksel",
+    name: "Aksel",
     email: "aitzakq@earthlink.net",
     password: "dhMcnd",
     role: "NASDAQ",
@@ -5142,7 +5142,7 @@ var userDemo = [
   },
   {
     id: 28,
-    first_name: "Thaine",
+    name: "Thaine",
     email: "tcoggenr@umn.edu",
     password: "gYChYuzc",
     role: "NYSE",
@@ -5150,7 +5150,7 @@ var userDemo = [
   },
   {
     id: 29,
-    first_name: "Val",
+    name: "Val",
     email: "vimortss@theglobeandmail.com",
     password: "xaXWjHdKWuTj",
     role: "NASDAQ",
@@ -5158,7 +5158,7 @@ var userDemo = [
   },
   {
     id: 30,
-    first_name: "Nani",
+    name: "Nani",
     email: "nlhommeet@skyrock.com",
     password: "plfXqq",
     role: "NYSE",
@@ -5166,7 +5166,7 @@ var userDemo = [
   },
   {
     id: 31,
-    first_name: "Mikel",
+    name: "Mikel",
     email: "mcobainu@sphinn.com",
     password: "JdOxiGzgAb",
     role: "NASDAQ",
@@ -5174,7 +5174,7 @@ var userDemo = [
   },
   {
     id: 32,
-    first_name: "Kylynn",
+    name: "Kylynn",
     email: "krigglesfordv@devhub.com",
     password: "Exrc9Q5",
     role: "NYSE",
@@ -5182,7 +5182,7 @@ var userDemo = [
   },
   {
     id: 33,
-    first_name: "Rosalind",
+    name: "Rosalind",
     email: "rrootew@cloudflare.com",
     password: "GCBfpyd",
     role: "NYSE",
@@ -5190,7 +5190,7 @@ var userDemo = [
   },
   {
     id: 34,
-    first_name: "Rustie",
+    name: "Rustie",
     email: "rantoniadesx@microsoft.com",
     password: "S17xCw8h3sZ",
     role: "NASDAQ",
@@ -5198,7 +5198,7 @@ var userDemo = [
   },
   {
     id: 35,
-    first_name: "Fonsie",
+    name: "Fonsie",
     email: "foldknowy@free.fr",
     password: "Uq6OSbRRNJ",
     role: "NYSE",
@@ -5206,7 +5206,7 @@ var userDemo = [
   },
   {
     id: 36,
-    first_name: "Lawry",
+    name: "Lawry",
     email: "lscasez@wisc.edu",
     password: "8dWS19",
     role: "NYSE",
@@ -5214,7 +5214,7 @@ var userDemo = [
   },
   {
     id: 37,
-    first_name: "Catherin",
+    name: "Catherin",
     email: "clamps10@cnbc.com",
     password: "dRulD7zeFG",
     role: "NASDAQ",
@@ -5222,7 +5222,7 @@ var userDemo = [
   },
   {
     id: 38,
-    first_name: "Hasty",
+    name: "Hasty",
     email: "hshearwood11@harvard.edu",
     password: "tAwKY2Pq2nd",
     role: "NYSE",
@@ -5230,7 +5230,7 @@ var userDemo = [
   },
   {
     id: 39,
-    first_name: "Dieter",
+    name: "Dieter",
     email: "dhalliday12@biglobe.ne.jp",
     password: "vwTKxK",
     role: "NASDAQ",
@@ -5238,7 +5238,7 @@ var userDemo = [
   },
   {
     id: 40,
-    first_name: "Crissie",
+    name: "Crissie",
     email: "cbente13@foxnews.com",
     password: "kc5s4RRJmyKc",
     role: "NASDAQ",
@@ -5246,7 +5246,7 @@ var userDemo = [
   },
   {
     id: 41,
-    first_name: "Bennett",
+    name: "Bennett",
     email: "bridder14@gnu.org",
     password: "pASujQlB",
     role: "NASDAQ",
@@ -5254,7 +5254,7 @@ var userDemo = [
   },
   {
     id: 42,
-    first_name: "Libbie",
+    name: "Libbie",
     email: "lkarpychev15@cargocollective.com",
     password: "Xy3bzoS0wTx",
     role: "NYSE",
@@ -5262,7 +5262,7 @@ var userDemo = [
   },
   {
     id: 43,
-    first_name: "Stephani",
+    name: "Stephani",
     email: "spyne16@ask.com",
     password: "99Y1El7auv",
     role: "NYSE",
@@ -5270,7 +5270,7 @@ var userDemo = [
   },
   {
     id: 44,
-    first_name: "Lidia",
+    name: "Lidia",
     email: "lheber17@over-blog.com",
     password: "ShxOgGvl1",
     role: "NYSE",
@@ -5278,7 +5278,7 @@ var userDemo = [
   },
   {
     id: 45,
-    first_name: "Armand",
+    name: "Armand",
     email: "amillwater18@psu.edu",
     password: "t4Broo",
     role: "NYSE",
@@ -5286,7 +5286,7 @@ var userDemo = [
   },
   {
     id: 46,
-    first_name: "Billi",
+    name: "Billi",
     email: "bknappett19@microsoft.com",
     password: "z0E1LF",
     role: "NYSE",
@@ -5294,7 +5294,7 @@ var userDemo = [
   },
   {
     id: 47,
-    first_name: "Kary",
+    name: "Kary",
     email: "krankcom1a@merriam-webster.com",
     password: "dKF3a1XUGgbY",
     role: "NYSE",
@@ -5302,7 +5302,7 @@ var userDemo = [
   },
   {
     id: 48,
-    first_name: "Wildon",
+    name: "Wildon",
     email: "wvigar1b@jugem.jp",
     password: "zFEJOGX9gwV",
     role: "NASDAQ",
@@ -5310,7 +5310,7 @@ var userDemo = [
   },
   {
     id: 49,
-    first_name: "Hadleigh",
+    name: "Hadleigh",
     email: "hashingden1c@joomla.org",
     password: "c3hoE8U",
     role: "NYSE",
@@ -5318,7 +5318,7 @@ var userDemo = [
   },
   {
     id: 50,
-    first_name: "Georgy",
+    name: "Georgy",
     email: "gcummine1d@springer.com",
     password: "GKMULwsN",
     role: "NASDAQ",
@@ -5326,7 +5326,7 @@ var userDemo = [
   },
   {
     id: 51,
-    first_name: "Drucill",
+    name: "Drucill",
     email: "dlunck1e@weibo.com",
     password: "OYCc3QhU",
     role: "NYSE",
@@ -5334,7 +5334,7 @@ var userDemo = [
   },
   {
     id: 52,
-    first_name: "Glenna",
+    name: "Glenna",
     email: "gcoudray1f@posterous.com",
     password: "0QGrxs",
     role: "NASDAQ",
@@ -5342,7 +5342,7 @@ var userDemo = [
   },
   {
     id: 53,
-    first_name: "Zane",
+    name: "Zane",
     email: "zgladstone1g@dailymail.co.uk",
     password: "hPAUqA",
     role: "NASDAQ",
@@ -5350,7 +5350,7 @@ var userDemo = [
   },
   {
     id: 54,
-    first_name: "Rubi",
+    name: "Rubi",
     email: "rszymczyk1h@storify.com",
     password: "Rg5NdW",
     role: "NYSE",
@@ -5358,7 +5358,7 @@ var userDemo = [
   },
   {
     id: 55,
-    first_name: "Paxton",
+    name: "Paxton",
     email: "pbullen1i@seattletimes.com",
     password: "vHuqFTUGg",
     role: "NYSE",
@@ -5366,7 +5366,7 @@ var userDemo = [
   },
   {
     id: 56,
-    first_name: "Marian",
+    name: "Marian",
     email: "mwonfar1j@gizmodo.com",
     password: "noHwPj9",
     role: "NASDAQ",
@@ -5374,7 +5374,7 @@ var userDemo = [
   },
   {
     id: 57,
-    first_name: "Sully",
+    name: "Sully",
     email: "sbowie1k@baidu.com",
     password: "IWf0YnvQ5",
     role: "NYSE",
@@ -5382,7 +5382,7 @@ var userDemo = [
   },
   {
     id: 58,
-    first_name: "Ewart",
+    name: "Ewart",
     email: "edainty1l@sogou.com",
     password: "Jk1w0poosahv",
     role: "NYSE",
@@ -5390,7 +5390,7 @@ var userDemo = [
   },
   {
     id: 59,
-    first_name: "Benton",
+    name: "Benton",
     email: "bruger1m@deliciousdays.com",
     password: "gerf71",
     role: "NASDAQ",
@@ -5398,7 +5398,7 @@ var userDemo = [
   },
   {
     id: 60,
-    first_name: "Lynna",
+    name: "Lynna",
     email: "lahern1n@fda.gov",
     password: "ndlXfYM",
     role: "NYSE",
@@ -5406,7 +5406,7 @@ var userDemo = [
   },
   {
     id: 61,
-    first_name: "Walsh",
+    name: "Walsh",
     email: "wkorfmann1o@list-manage.com",
     password: "EFRIAaL",
     role: "NASDAQ",
@@ -5414,7 +5414,7 @@ var userDemo = [
   },
   {
     id: 62,
-    first_name: "Ailbert",
+    name: "Ailbert",
     email: "ametzel1p@gmpg.org",
     password: "OpW9Vzz71",
     role: "NYSE",
@@ -5422,7 +5422,7 @@ var userDemo = [
   },
   {
     id: 63,
-    first_name: "Sadella",
+    name: "Sadella",
     email: "sletertre1q@latimes.com",
     password: "nHOQSWchFX",
     role: "NASDAQ",
@@ -5430,7 +5430,7 @@ var userDemo = [
   },
   {
     id: 64,
-    first_name: "Joceline",
+    name: "Joceline",
     email: "jalan1r@rediff.com",
     password: "MzcMCAZgca",
     role: "NYSE",
@@ -5438,7 +5438,7 @@ var userDemo = [
   },
   {
     id: 65,
-    first_name: "Ladonna",
+    name: "Ladonna",
     email: "lsharpus1s@npr.org",
     password: "5VI5a7jZpTw",
     role: "NASDAQ",
@@ -5446,7 +5446,7 @@ var userDemo = [
   },
   {
     id: 66,
-    first_name: "Lek",
+    name: "Lek",
     email: "lhawkridge1t@bbc.co.uk",
     password: "TAZLzN",
     role: "NYSE",
@@ -5454,7 +5454,7 @@ var userDemo = [
   },
   {
     id: 67,
-    first_name: "Micheal",
+    name: "Micheal",
     email: "mdubois1u@microsoft.com",
     password: "A54yhq",
     role: "NYSE",
@@ -5462,7 +5462,7 @@ var userDemo = [
   },
   {
     id: 68,
-    first_name: "Dale",
+    name: "Dale",
     email: "doland1v@vkontakte.ru",
     password: "Xx6DqJD",
     role: "NASDAQ",
@@ -5470,7 +5470,7 @@ var userDemo = [
   },
   {
     id: 69,
-    first_name: "Osmund",
+    name: "Osmund",
     email: "ofruen1w@blog.com",
     password: "249rcO",
     role: "NASDAQ",
@@ -5478,7 +5478,7 @@ var userDemo = [
   },
   {
     id: 70,
-    first_name: "Ericka",
+    name: "Ericka",
     email: "ereeme1x@quantcast.com",
     password: "TMhbyS",
     role: "NASDAQ",
@@ -5486,7 +5486,7 @@ var userDemo = [
   },
   {
     id: 71,
-    first_name: "Leonerd",
+    name: "Leonerd",
     email: "lleslie1y@shareasale.com",
     password: "JMg96HQyA9",
     role: "NYSE",
@@ -5494,7 +5494,7 @@ var userDemo = [
   },
   {
     id: 72,
-    first_name: "Korry",
+    name: "Korry",
     email: "kfairpool1z@dailymotion.com",
     password: "cnrhKH",
     role: "NASDAQ",
@@ -5502,7 +5502,7 @@ var userDemo = [
   },
   {
     id: 73,
-    first_name: "Ely",
+    name: "Ely",
     email: "epetch20@tamu.edu",
     password: "755hcJpHJMn6",
     role: "NASDAQ",
@@ -5510,7 +5510,7 @@ var userDemo = [
   },
   {
     id: 74,
-    first_name: "Tory",
+    name: "Tory",
     email: "tdiament21@google.it",
     password: "wukP7BKthW",
     role: "NASDAQ",
@@ -5518,7 +5518,7 @@ var userDemo = [
   },
   {
     id: 75,
-    first_name: "Jeremias",
+    name: "Jeremias",
     email: "jbrockie22@alexa.com",
     password: "peH2Lq1X216d",
     role: "NYSE",
@@ -5526,7 +5526,7 @@ var userDemo = [
   },
   {
     id: 76,
-    first_name: "Alister",
+    name: "Alister",
     email: "abaterip23@wired.com",
     password: "yxwIXs4mTVT",
     role: "NASDAQ",
@@ -5534,7 +5534,7 @@ var userDemo = [
   },
   {
     id: 77,
-    first_name: "Morissa",
+    name: "Morissa",
     email: "mboothroyd24@cmu.edu",
     password: "MIineyBN",
     role: "NYSE",
@@ -5542,7 +5542,7 @@ var userDemo = [
   },
   {
     id: 78,
-    first_name: "Nan",
+    name: "Nan",
     email: "nfretter25@addtoany.com",
     password: "ruZSmtvHme",
     role: "NASDAQ",
@@ -5550,7 +5550,7 @@ var userDemo = [
   },
   {
     id: 79,
-    first_name: "Clare",
+    name: "Clare",
     email: "csimper26@berkeley.edu",
     password: "roR8Lm7eMYV",
     role: "NASDAQ",
@@ -5558,7 +5558,7 @@ var userDemo = [
   },
   {
     id: 80,
-    first_name: "Adoree",
+    name: "Adoree",
     email: "amantram27@devhub.com",
     password: "Vjc3mxIUUEI",
     role: "NYSE",
@@ -5566,7 +5566,7 @@ var userDemo = [
   },
   {
     id: 81,
-    first_name: "Yorgos",
+    name: "Yorgos",
     email: "ycullerne28@xinhuanet.com",
     password: "J4br26GOK5Pl",
     role: "NYSE",
@@ -5574,7 +5574,7 @@ var userDemo = [
   },
   {
     id: 82,
-    first_name: "Arron",
+    name: "Arron",
     email: "aleggin29@squidoo.com",
     password: "ZdmL0HSJ3",
     role: "NYSE",
@@ -5582,7 +5582,7 @@ var userDemo = [
   },
   {
     id: 83,
-    first_name: "Lexie",
+    name: "Lexie",
     email: "lpiller2a@artisteer.com",
     password: "YlratKa9Y",
     role: "NYSE",
@@ -5590,7 +5590,7 @@ var userDemo = [
   },
   {
     id: 84,
-    first_name: "Micky",
+    name: "Micky",
     email: "mcossell2b@digg.com",
     password: "gaBXTQTd",
     role: "NYSE",
@@ -5598,7 +5598,7 @@ var userDemo = [
   },
   {
     id: 85,
-    first_name: "Giacomo",
+    name: "Giacomo",
     email: "gebbett2c@si.edu",
     password: "AUgNVa",
     role: "NYSE",
@@ -5606,7 +5606,7 @@ var userDemo = [
   },
   {
     id: 86,
-    first_name: "Dixie",
+    name: "Dixie",
     email: "delwell2d@examiner.com",
     password: "58y2XhHHAyf",
     role: "NASDAQ",
@@ -5614,7 +5614,7 @@ var userDemo = [
   },
   {
     id: 87,
-    first_name: "Felice",
+    name: "Felice",
     email: "fhave2e@nymag.com",
     password: "Ie8H0QsMXxoB",
     role: "NYSE",
@@ -5622,7 +5622,7 @@ var userDemo = [
   },
   {
     id: 88,
-    first_name: "Steward",
+    name: "Steward",
     email: "slindenman2f@php.net",
     password: "jmWKdtJvt",
     role: "NASDAQ",
@@ -5630,7 +5630,7 @@ var userDemo = [
   },
   {
     id: 89,
-    first_name: "Ansley",
+    name: "Ansley",
     email: "aponceford2g@etsy.com",
     password: "jw3cMgyme",
     role: "NASDAQ",
@@ -5638,7 +5638,7 @@ var userDemo = [
   },
   {
     id: 90,
-    first_name: "Ralph",
+    name: "Ralph",
     email: "rong2h@who.int",
     password: "NFSpHOpAfmw",
     role: "NASDAQ",
@@ -5646,7 +5646,7 @@ var userDemo = [
   },
   {
     id: 91,
-    first_name: "Heidie",
+    name: "Heidie",
     email: "hgalley2i@home.pl",
     password: "N9xvQSiTd",
     role: "NASDAQ",
@@ -5654,7 +5654,7 @@ var userDemo = [
   },
   {
     id: 92,
-    first_name: "Olympia",
+    name: "Olympia",
     email: "ostennine2j@guardian.co.uk",
     password: "wQokiPBcV",
     role: "NYSE",
@@ -5662,7 +5662,7 @@ var userDemo = [
   },
   {
     id: 93,
-    first_name: "Timothy",
+    name: "Timothy",
     email: "tvanderhoog2k@pagesperso-orange.fr",
     password: "DLuZKGd0",
     role: "NASDAQ",
@@ -5670,7 +5670,7 @@ var userDemo = [
   },
   {
     id: 94,
-    first_name: "Immanuel",
+    name: "Immanuel",
     email: "ihassey2l@wisc.edu",
     password: "wWZDMON",
     role: "NASDAQ",
@@ -5678,7 +5678,7 @@ var userDemo = [
   },
   {
     id: 95,
-    first_name: "Caty",
+    name: "Caty",
     email: "caslin2m@ask.com",
     password: "8ZP15JyOfjty",
     role: "NASDAQ",
@@ -5686,7 +5686,7 @@ var userDemo = [
   },
   {
     id: 96,
-    first_name: "Aube",
+    name: "Aube",
     email: "abloxam2n@census.gov",
     password: "PsS8nqjQ",
     role: "NYSE",
@@ -5694,7 +5694,7 @@ var userDemo = [
   },
   {
     id: 97,
-    first_name: "Petrina",
+    name: "Petrina",
     email: "ppettiward2o@nhs.uk",
     password: "dBkKifQ9dl",
     role: "NASDAQ",
@@ -5702,7 +5702,7 @@ var userDemo = [
   },
   {
     id: 98,
-    first_name: "Roland",
+    name: "Roland",
     email: "rbradane2p@seattletimes.com",
     password: "pEVamiOoW",
     role: "NASDAQ",
@@ -5710,7 +5710,7 @@ var userDemo = [
   },
   {
     id: 99,
-    first_name: "Reece",
+    name: "Reece",
     email: "rpaice2q@examiner.com",
     password: "WVOyC5cdiT",
     role: "NASDAQ",
@@ -5718,7 +5718,7 @@ var userDemo = [
   },
   {
     id: 100,
-    first_name: "Conrad",
+    name: "Conrad",
     email: "clipyeat2r@foxnews.com",
     password: "vbXYaetjfP3x",
     role: "NASDAQ",

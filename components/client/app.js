@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#clienttable").DataTable({
+  var ct = $("#clienttable").DataTable({
     order: [[0, "desc"]],
     data: clientDemo,
 
