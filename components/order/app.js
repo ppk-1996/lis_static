@@ -50,7 +50,7 @@ $(document).ready(function () {
           
             <a target="_blank" href="https://www.reportss.org/wp-content/uploads/2012/10/Test-Report-Template.docx" type="button" class="btn btn-info btn-sm"> Test Results</a>
             
-            <button type="button" class="btn btn-warning btn-sm" onclick="$(this).html('Paid').removeClass('btn-warning').addClass('btn-info');"> Pay Now</button>
+            <button type="button" class="btn btn-warning btn-sm" onclick="$(this).html('Paid').removeClass('btn-warning').addClass('btn-secondary');"> Pay Now</button>
           
             <button type="button" class="btn btn-danger btn-sm" onclick="$('#${row.order_id}').html('Cancelled')" > Cancel</button>
             `;
@@ -58,7 +58,7 @@ $(document).ready(function () {
             return `
             <a target="_blank" href="https://invoicetemplates.com/wp-content/uploads/medical-bill-invoice-template.pdf" type="button" class="btn btn-success btn-sm"> Invoice</a>
                      
-            <button type="button" class="btn btn-warning btn-sm" onclick="$(this).html('Paid').removeClass('btn-warning').addClass('btn-info');"> Pay Now</button>
+            <button type="button" class="btn btn-warning btn-sm" onclick="$(this).html('Paid').removeClass('btn-warning').addClass('btn-secondary');"> Pay Now</button>
           
             <button type="button" class="btn btn-danger btn-sm" onclick="$('#${row.order_id}').html('Cancelled')" > Cancel</button>
             `;
