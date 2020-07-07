@@ -28,7 +28,6 @@ function calculateTotalAmount() {
   $("#totalAmount").val(totalAmount);
 }
 
-var newID = orderDemo[orderDemo.length - 1].order_id + 1;
 $(document).ready(function () {
   var ot = $("#ordertable").DataTable({
     order: [[0, "desc"]],
@@ -41,21 +40,29 @@ $(document).ready(function () {
       { data: "tat" },
       { data: "tests" },
       { data: "dateTime" },
+      { data: "status" },
       {
         data: "status",
         render: function (data, type, row) {
-          return `<span id="${row.order_id}">${data}</span>`;
-        },
-      },
-      {
-        data: null,
-        render: function (data, type, row) {
-          return `
+          if (data == "Completed") {
+            return `
             <a target="_blank" href="https://invoicetemplates.com/wp-content/uploads/medical-bill-invoice-template.pdf" type="button" class="btn btn-success btn-sm"> Invoice</a>
+          
+            <a target="_blank" href="https://www.reportss.org/wp-content/uploads/2012/10/Test-Report-Template.docx" type="button" class="btn btn-info btn-sm"> Test Results</a>
+            
             <button type="button" class="btn btn-warning btn-sm" onclick="$(this).html('Paid').removeClass('btn-warning').addClass('btn-info');"> Pay Now</button>
-        
+          
             <button type="button" class="btn btn-danger btn-sm" onclick="$('#${row.order_id}').html('Cancelled')" > Cancel</button>
             `;
+          } else {
+            return `
+            <a target="_blank" href="https://invoicetemplates.com/wp-content/uploads/medical-bill-invoice-template.pdf" type="button" class="btn btn-success btn-sm"> Invoice</a>
+                     
+            <button type="button" class="btn btn-warning btn-sm" onclick="$(this).html('Paid').removeClass('btn-warning').addClass('btn-info');"> Pay Now</button>
+          
+            <button type="button" class="btn btn-danger btn-sm" onclick="$('#${row.order_id}').html('Cancelled')" > Cancel</button>
+            `;
+          }
         },
       },
     ],
@@ -75,7 +82,7 @@ $(document).ready(function () {
       details: {
         display: $.fn.dataTable.Responsive.display.modal({
           header: function () {
-            return "Patient Detail";
+            return "Order Detail";
           },
         }),
         renderer: $.fn.dataTable.Responsive.renderer.tableAll({
@@ -90,7 +97,9 @@ $(document).ready(function () {
       { responsivePriority: 4, targets: -6 },
     ],
   });
+
   $("#submitOrder").on("click", function () {
+    var newID = orderDemo[orderDemo.length - 1].order_id + 1;
     var newRow = {
       order_id: newID,
       patient_name: $("#patient_name").val(),

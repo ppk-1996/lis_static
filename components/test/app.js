@@ -4,18 +4,21 @@ function runTest(id, name, test_name, type) {
   $("#patientName").val(name);
   $("#runTestName").val(test_name);
   $("#runTestType").val(type);
+  $("result").val("");
   $(".form-check-input").prop("checked", false);
 }
-function rerunTest(id, name, test_name, type) {
+function rerunTest(id, name, test_name, type, result) {
   $("#runTestModelLabel").html("Rerun Test");
   $("#orderID").val(id);
   $("#patientName").val(name);
   $("#runTestName").val(test_name);
   $("#runTestType").val(type);
+  $("#result").val(result);
+
   $("#1").prop("checked", true);
 }
 $(document).ready(function () {
-  $("#testrecordtable").DataTable({
+  var trt = $("#testrecordtable").DataTable({
     order: [[0, "desc"]],
     data: testRecordDemo,
 
@@ -38,7 +41,7 @@ $(document).ready(function () {
           if (row.status == "Completed") {
             return `
             <button type="button" class="btn btn-info btn-sm"   data-toggle="modal"
-            data-target="#runTestModal" onclick="rerunTest(${row.order_id},'${row.patient_name}','${row.test_name}','${row.test_type}')"> Rerun Test</button>
+            data-target="#runTestModal" onclick="rerunTest(${row.order_id},'${row.patient_name}','${row.test_name}','${row.test_type}','${row.result}')"> Rerun Test</button>
             `;
           }
           return `
@@ -90,8 +93,9 @@ $(document).ready(function () {
       { data: "price" },
     ],
   });
-  var newID = testDemo[testDemo.length - 1].id + 1;
+
   $("#addTest").on("click", function () {
+    var newID = testDemo[testDemo.length - 1].id + 1;
     var newRow = {
       id: newID,
       name: $("#testName").val(),
@@ -106,4 +110,6 @@ $(document).ready(function () {
     $("#testType").val("");
     $("#testPrice").val("");
   });
+
+  $("#uploadResult").on("click", function () {});
 });

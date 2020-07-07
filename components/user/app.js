@@ -1,15 +1,15 @@
 $(document).ready(function () {
   $("#clienttable").DataTable({
     order: [[0, "desc"]],
-    data: clientDemo,
+    data: userDemo,
 
     columns: [
       { data: "id" },
       { data: "name" },
       { data: "email" },
-      { data: "type" },
+      { data: "password" },
+      { data: "role" },
       { data: "phone" },
-      { data: "address" },
 
       {
         data: null,

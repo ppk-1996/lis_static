@@ -1,9 +1,13 @@
 function dispatchSample(id) {
   $("#" + id).html("Dispatched");
 }
-
+function selectOrder(id, name) {
+  $("#order_id").val(id);
+  $("#patient_name").val(name);
+}
 $(document).ready(function () {
-  $("#sampletable").DataTable({
+  var st = $("#sampletable").DataTable({
+    order: [[0, "desc"]],
     data: sampleDemo,
     columns: [
       { data: "id" },
@@ -74,5 +78,45 @@ $(document).ready(function () {
       { responsivePriority: 1, targets: 0 },
       { responsivePriority: 2, targets: -1 },
     ],
+  });
+
+  $("#ordertable").DataTable({
+    bInfo: false,
+    pageLength: 1,
+    lengthMenu: [1, 5, 10],
+    order: [[0, "desc"]],
+    data: orderDemo,
+    columns: [
+      { data: "order_id" },
+      { data: "patient_name" },
+      { data: "balance" },
+      { data: "level" },
+      {
+        data: null,
+        render: function (data, type, row) {
+          return `<a class="btn btn-sm btn-success text-white" onclick="selectOrder('${row.order_id}','${row.patient_name}')">Select Order</a>`;
+        },
+      },
+    ],
+  });
+
+  $("#submitSample").on("click", function () {
+    var newID = sampleDemo[sampleDemo.length - 1].id + 1;
+    var newRow = {
+      id: newID,
+      order_id: $("#order_id").val(),
+      patient_name: $("#patient_name").val(),
+      type: $("#type").val(),
+      collector: $("#collector").val(),
+      status: $("#status").val(),
+      additive: $("#additive").val(),
+      container: $("#container").val(),
+      volume: $("#volume").val(),
+      date: Date.now(),
+      status: $("#status").val(),
+    };
+    var rowNode = st.row.add(newRow).draw().node();
+    $(rowNode).css("color", "red");
+    newID++;
   });
 });

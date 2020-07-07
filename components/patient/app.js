@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  $("#patienttable").DataTable({
+  var pt = $("#patienttable").DataTable({
+    order: [[0, "desc"]],
     data: patientDemo,
     columns: [
       { data: "id" },
@@ -18,11 +19,10 @@ $(document).ready(function () {
       { data: "reg_date" },
       { data: "reg_time" },
       {
-        data: null,
+        data: "name",
         render: function (data, type, row) {
           return `
-            <button type="button" class="btn btn-success btn-sm"> Orders</button>
-            <button type="button" class="btn btn-info btn-sm"> Records</button>
+            <a href="../order/index.html" class="btn btn-success btn-sm" >Orders</a>
             <button type="button" class="btn btn-warning btn-sm"> Edit</button>
             <button type="button" class="btn btn-danger btn-sm"> Delete</button>
             `;
@@ -57,5 +57,29 @@ $(document).ready(function () {
       { responsivePriority: 1, targets: 0 },
       { responsivePriority: 2, targets: -1 },
     ],
+  });
+
+  $("#submitPatient").on("click", function () {
+    var newID = patientDemo[patientDemo.length - 1].id + 1;
+    var newRow = {
+      id: newID,
+      name: $("#name").val(),
+      nrc: $("#nrc").val(),
+      dob: $("#dob").val(),
+      age: $("#age").val(),
+      blood_type: $("#blood_type").val(),
+      gender: $("#gender").val(),
+      height: $("#height").val(),
+      weight: $("#weight").val(),
+      marital_status: $("#marital_status").val(),
+      referral: $("#referral").val(),
+      phone: $("#phone").val(),
+      address: $("#address").val(),
+      reg_date: $("#reg_date").val(),
+      reg_time: $("#reg_time").val(),
+    };
+    var rowNode = pt.row.add(newRow).draw().node();
+    $(rowNode).css("color", "red");
+    newID++;
   });
 });

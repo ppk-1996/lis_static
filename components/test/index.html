@@ -30,6 +30,11 @@
     />
     <link href="./style.css" rel="stylesheet" />
 
+    <script
+      src="https://cdn.tiny.cloud/1/6hwusesknwrg08323wzcwb60x7cllzx1wvi725zz21oflpp4/tinymce/5/tinymce.min.js"
+      referrerpolicy="origin"
+    ></script>
+
     <title>LIMS - Patient</title>
   </head>
   <body id="bootstrap-override">
@@ -364,6 +369,16 @@
                   </tbody>
                 </table>
               </div>
+              <div class="form-group">
+                <label for="">Result</label>
+                <textarea
+                  class="form-control"
+                  name=""
+                  id="result"
+                  rows="3"
+                  placeholder="Type Test Result Here"
+                ></textarea>
+              </div>
             </div>
 
             <div class="modal-footer">
@@ -373,6 +388,13 @@
                 data-dismiss="modal"
               >
                 Close
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Upload Result and Complete Testing
               </button>
             </div>
           </div>
@@ -401,5 +423,13 @@
     <script src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.5/js/responsive.bootstrap4.min.js"></script>
     <script src="./app.js"></script>
+    <script>
+      tinymce.init({
+        selector: "textarea",
+        plugins:
+          "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+        toolbar_mode: "floating",
+      });
+    </script>
   </body>
 </html>
