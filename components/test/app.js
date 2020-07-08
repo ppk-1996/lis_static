@@ -109,8 +109,8 @@ $(document).ready(function () {
     ],
   });
 
+  var newID = testDemo[testDemo.length - 1].id + 1;
   $("#addTest").on("click", function () {
-    var newID = testDemo[testDemo.length - 1].id + 1;
     var newRow = {
       id: newID,
       name: $("#testName").val(),

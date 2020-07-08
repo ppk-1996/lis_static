@@ -59,8 +59,8 @@ $(document).ready(function () {
     ],
   });
 
+  var newID = patientDemo[patientDemo.length - 1].id + 1;
   $("#submitPatient").on("click", function () {
-    var newID = patientDemo[patientDemo.length - 1].id + 1;
     var newRow = {
       id: newID,
       name: $("#name").val(),

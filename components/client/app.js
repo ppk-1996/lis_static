@@ -16,7 +16,7 @@ $(document).ready(function () {
         render: function (data, type, row) {
           return `
             <button type="button" class="btn btn-warning btn-sm"> Edit</button>
-            <button type="button" class="btn btn-danger btn-sm"> Delete</button>
+            <button type="button" class="btn btn-danger btn-sm" onclick="$(this).parent().parent().hide()"> Delete</button>
             `;
         },
       },
@@ -49,5 +49,20 @@ $(document).ready(function () {
       { responsivePriority: 1, targets: 0 },
       { responsivePriority: 2, targets: -1 },
     ],
+  });
+
+  var newID = clientDemo[clientDemo.length - 1].id + 1;
+  $("#submitClient").on("click", function () {
+    var newRow = {
+      id: newID,
+      name: $("#name").val(),
+      email: $("#email").val(),
+      type: $("#type").val(),
+      phone: $("#phone").val(),
+      address: $("#address").val(),
+    };
+    var rowNode = ct.row.add(newRow).draw().node();
+    $(rowNode).css("color", "red");
+    newID++;
   });
 });

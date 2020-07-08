@@ -101,8 +101,8 @@ $(document).ready(function () {
     ],
   });
 
+  var newID = orderDemo[orderDemo.length - 1].order_id + 1;
   $("#submitOrder").on("click", function () {
-    var newID = orderDemo[orderDemo.length - 1].order_id + 1;
     var newRow = {
       order_id: newID,
       patient_name: $("#patient_name").val(),

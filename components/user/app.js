@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#clienttable").DataTable({
+  var ut = $("#usertable").DataTable({
     order: [[0, "desc"]],
     data: userDemo,
 
@@ -49,5 +49,20 @@ $(document).ready(function () {
       { responsivePriority: 1, targets: 0 },
       { responsivePriority: 2, targets: -1 },
     ],
+  });
+
+  var newID = userDemo[userDemo.length - 1].id + 1;
+  $("#submitUser").on("click", function () {
+    var newRow = {
+      id: newID,
+      name: $("#name").val(),
+      email: $("#email").val(),
+      password: $("#password").val(),
+      role: $("#role").val(),
+      phone: $("#phone").val(),
+    };
+    var rowNode = ut.row.add(newRow).draw().node();
+    $(rowNode).css("color", "red");
+    newID++;
   });
 });

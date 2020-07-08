@@ -100,8 +100,8 @@ $(document).ready(function () {
     ],
   });
 
+  var newID = sampleDemo[sampleDemo.length - 1].id + 1;
   $("#submitSample").on("click", function () {
-    var newID = sampleDemo[sampleDemo.length - 1].id + 1;
     var newRow = {
       id: newID,
       order_id: $("#order_id").val(),
