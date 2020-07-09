@@ -71,7 +71,7 @@ $(document).ready(function () {
       gender: $("#gender").val(),
       height: $("#height").val(),
       weight: $("#weight").val(),
-      marital_status: $("#marital_status").val(),
+      marital_status: $("#marital").val(),
       referral: $("#referral").val(),
       phone: $("#phone").val(),
       address: $("#address").val(),
